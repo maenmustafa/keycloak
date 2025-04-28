@@ -1,4 +1,4 @@
-Keycloak Username Lowercase Fix for SAP Business One Fiori Cockpit
+Keycloak Username Lowercase Fix for SAP Business One Fiori Cockpit / Invalid username or password
 
 
 Overview
