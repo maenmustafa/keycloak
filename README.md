@@ -21,13 +21,13 @@ First, extract the provided tar archive:
 
 
 tar -xvf keycloak_tolowercase.tar.gz
+
 2. Backup Existing JAR Files
 Navigate to your Keycloak JAR directory:
 
 
-
-
 cd /usr/sap/SAPBusinessOne/Common/keycloak/lib/lib/main
+
 Backup the existing JAR files:
 
 
@@ -49,6 +49,7 @@ cp org.keycloak.keycloak-services-24.0.4.jar org.keycloak.keycloak-services-24.0
 
 
 3. Copy the New JAR Files
+   
 Return to the folder containing the extracted, compiled JAR files:
 
 
@@ -57,6 +58,7 @@ Return to the folder containing the extracted, compiled JAR files:
 cp org.keycloak* /usr/sap/SAPBusinessOne/Common/keycloak/lib/lib/main
 
 4. Set Permissions
+   
 Back in the Keycloak main directory:
 
 
@@ -108,7 +110,8 @@ Finally, restart the SAP B1 Authentication Service:
 
 
 service sapb1servertools-authentication restart
-Result
+
+
 Once you have completed the above steps:
 
 Login to SAP Business One normally.
