@@ -34,12 +34,20 @@ Backup the existing JAR files:
 
 
 cp org.keycloak.keycloak-crypto-default-24.0.4.jar org.keycloak.keycloak-crypto-default-24.0.4.jar.bak
+
 cp org.keycloak.keycloak-model-jpa-24.0.4.jar org.keycloak.keycloak-model-jpa-24.0.4.jar.bak
+
 cp org.keycloak.keycloak-model-storage-24.0.4.jar org.keycloak.keycloak-model-storage-24.0.4.jar.bak
+
 cp org.keycloak.keycloak-model-storage-private-24.0.4.jar org.keycloak.keycloak-model-storage-private-24.0.4.jar.bak
+
 cp org.keycloak.keycloak-server-spi-24.0.4.jar org.keycloak.keycloak-server-spi-24.0.4.jar.bak
+
 cp org.keycloak.keycloak-server-spi-private-24.0.4.jar org.keycloak.keycloak-server-spi-private-24.0.4.jar.bak
+
 cp org.keycloak.keycloak-services-24.0.4.jar org.keycloak.keycloak-services-24.0.4.jar.bak
+
+
 3. Copy the New JAR Files
 Return to the folder containing the extracted, compiled JAR files:
 
@@ -47,38 +55,48 @@ Return to the folder containing the extracted, compiled JAR files:
 
 
 cp org.keycloak* /usr/sap/SAPBusinessOne/Common/keycloak/lib/lib/main
+
 4. Set Permissions
 Back in the Keycloak main directory:
 
 
-
-
 cd /usr/sap/SAPBusinessOne/Common/keycloak/lib/lib/main
+
 Apply correct permissions:
 
-
-
-
 chmod 775 org.keycloak.keycloak-crypto-default-24.0.4.jar
+
 chmod 775 org.keycloak.keycloak-model-jpa-24.0.4.jar
+
 chmod 775 org.keycloak.keycloak-model-storage-24.0.4.jar
+
 chmod 775 org.keycloak.keycloak-model-storage-private-24.0.4.jar
+
 chmod 775 org.keycloak.keycloak-server-spi-24.0.4.jar
+
 chmod 775 org.keycloak.keycloak-server-spi-private-24.0.4.jar
+
 chmod 775 org.keycloak.keycloak-services-24.0.4.jar
+
+
 Update ownership to b1service0:
 
-
-
-
 chown b1service0:b1service0 org.keycloak.keycloak-crypto-default-24.0.4.jar
+
 chown b1service0:b1service0 org.keycloak.keycloak-model-jpa-24.0.4.jar
+
 chown b1service0:b1service0 org.keycloak.keycloak-model-storage-24.0.4.jar
+
 chown b1service0:b1service0 org.keycloak.keycloak-model-storage-private-24.0.4.jar
+
 chown b1service0:b1service0 org.keycloak.keycloak-server-spi-24.0.4.jar
+
 chown b1service0:b1service0 org.keycloak.keycloak-server-spi-private-24.0.4.jar
+
 chown b1service0:b1service0 org.keycloak.keycloak-services-24.0.4.jar
+
 5. Clean Up Authentication Users
+   
 Login to the Authentication Service and delete all users except b1siteuser.
 
 This ensures no corrupted or lowercased user entries remain.
