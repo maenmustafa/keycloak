@@ -128,3 +128,8 @@ Always perform changes in a test environment first before applying to production
 License
 This fix is distributed as-is, without warranties. Use it at your own risk for improving SAP Business One integrations.
 
+
+#SAPBusinessOne #Keycloak #FioriCockpit #AuthenticationFix #SAPSecurity #HANA #SAPConsulting #DevOps #opensource #SAPPartner
+
+#SAPBusinessOne #SAP #HANA #Keycloak #FioriCockpit #Authentication #Security #opensource #innovation
+
